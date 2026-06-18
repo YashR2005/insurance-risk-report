@@ -1,0 +1,21 @@
+{
+  "report_type": "Property / Insurance Risk Report",
+  "version": "0.2",
+  "fields": [
+    {
+      "name": "site_description",
+      "requires_citation": false,
+      "prompt": "Write a neutral one-paragraph description of the inspected site from the summary. Do not assess risk here."
+    },
+    {
+      "name": "hazards_identified",
+      "requires_citation": true,
+      "prompt": "State the hazard implied by the finding and reference the relevant standard. Be specific and factual; cite only the standard provided."
+    },
+    {
+      "name": "compliance_assessment",
+      "requires_citation": true,
+      "prompt": "Assess whether the finding meets the cited requirement. Note the requirement, the observed condition, and whether it is compliant or non-compliant. Cite only the standard provided."
+    }
+  ]
+}

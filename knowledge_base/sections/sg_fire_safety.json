@@ -1,0 +1,90 @@
+[
+  {
+    "id": "FSSG-001",
+    "jurisdiction": "SG",
+    "hazard_class": "egress",
+    "title": "Means of escape and exit access",
+    "text": "Required exits shall be kept readily accessible, and doors shall be openable and unobstructed at all times during the occupancy of the building. There shall be no obstruction or any object encroaching, including any door swinging, onto the egress path, and the clear width of the egress path shall not be reduced below the required exit width. Storage, equipment or materials must not be placed within exit access corridors or in front of exit doors.",
+    "source_ref": "SCDF Fire Code 2023, Clause 2.3.1a / 2.3.3 (Means of Escape Requirements) \u2014 https://www.scdf.gov.sg/fire-safety-services-listing/fire-code-2023/table-of-content/chapter-2-means-of-escape/clause-2.3-means-of-escape-requirements"
+  },
+  {
+    "id": "FSSG-002",
+    "jurisdiction": "SG",
+    "hazard_class": "suppression",
+    "title": "Provision and distribution of portable fire extinguishers",
+    "text": "Portable fire extinguishers shall be provided and located so that the travel distance for any person to reach an extinguisher does not exceed 15 m. Extinguishers shall be selected for the hazard and floor area, constructed to SS EN 3, and charged, tested, maintained and tagged in accordance with SS 578. A single extinguisher does not provide adequate coverage for a large floor area.",
+    "source_ref": "SCDF Fire Code 2023, Clause 6.1 (Portable Extinguishers) \u2014 https://www.scdf.gov.sg/fire-safety-services-listing/fire-code-2023/table-of-content/chapter-6-firefighting-systems/clause-6.1-portable-extinguishers"
+  },
+  {
+    "id": "FSSG-003",
+    "jurisdiction": "SG",
+    "hazard_class": "storage",
+    "title": "Storage of combustible materials, electrical clearance and housekeeping",
+    "text": "Combustible materials such as cardboard and packaging must not be stored against electrical distribution boards, switchgear or other ignition sources, and adequate clearance must be maintained around electrical equipment. Electrical circuits must not be overloaded and extension leads must not be daisy-chained to power equipment. Good housekeeping must be observed to remove accumulations of combustible waste that present a fire hazard.",
+    "source_ref": "Fire Safety Act 1993 (Singapore), general fire-hazard provisions; SCDF good-housekeeping guidance \u2014 https://sso.agc.gov.sg/Act/FSA1993"
+  },
+  {
+    "id": "FSSG-004",
+    "jurisdiction": "SG",
+    "hazard_class": "emergency_systems",
+    "title": "Exit lighting and exit signs",
+    "text": "Illuminated exit signs and emergency lighting shall be provided along escape routes, corridors, staircases and at exit doors to guide occupants to a place of safety. On loss of normal power the exit lighting shall energise within 1 second, maintain not less than 0.5 lux along the centre line of any escape route for at least 1 hour, and the failure of any single luminaire or exit sign shall not leave an area in total darkness (SS 563).",
+    "source_ref": "SCDF Fire Code 2023, Clause 8.1 (Exit Lighting and Exit Sign), with SS 563 \u2014 https://www.scdf.gov.sg/fire-safety-services-listing/fire-code-2023/table-of-content/chapter-8-emergency-lighting-voice-communication-systems/clause-8.1-exit-lighting-and-exit-sign"
+  },
+  {
+    "id": "FSSG-005",
+    "jurisdiction": "SG",
+    "hazard_class": "suppression",
+    "title": "Automatic sprinkler protection and clearance",
+    "text": "Where automatic sprinkler protection is required it shall be designed, installed and maintained in accordance with SS CP 52. A minimum clearance must be maintained below sprinkler heads; stock, racking or stored goods must not be piled so high as to obstruct the spray pattern or impede the effectiveness of the system.",
+    "source_ref": "SCDF Fire Code 2023, Clause 6.4 (Fire Sprinkler Installation), with SS CP 52 \u2014 https://www.scdf.gov.sg/fire-safety-services-listing/fire-code-2023/table-of-content/chapter-6-firefighting-systems/clause-6.4-fire-sprinkler-installation"
+  },
+  {
+    "id": "FSSG-006",
+    "jurisdiction": "SG",
+    "hazard_class": "emergency_systems",
+    "title": "Fire detection and alarm \u2014 maintenance and testing",
+    "text": "Electrical fire alarm systems, including manual call points and detectors, shall be installed and serviced in accordance with SS 645. Systems must be inspected and tested at the prescribed quarterly and annual intervals, kept in full working condition, and the tests documented. Defective or untested devices compromise early warning and must be rectified.",
+    "source_ref": "SCDF Fire Code 2023, Clause 6.3 (Electrical Fire Alarm System), with SS 645:2019 \u2014 https://www.scdf.gov.sg/fire-safety-services-listing/fire-code-2023/table-of-content/chapter-6-firefighting-systems/clause-6.3-electrical-fire-alarm-system"
+  },
+  {
+    "id": "FSSG-007",
+    "jurisdiction": "SG",
+    "hazard_class": "storage",
+    "title": "Storage of petroleum and flammable materials",
+    "text": "Petroleum and flammable materials must be stored only in approved, ventilated containers or cabinets and in quantities within the limits permitted for the premises; storage above the exempt quantity requires an SCDF storage licence. Such materials must be kept away from ignition sources and escape routes, and emergency response measures must be in place.",
+    "source_ref": "Fire Safety (Petroleum and Flammable Materials) Regulations 2020 (Singapore); SCDF P&FM licensing \u2014 https://www.scdf.gov.sg/fire-safety-services-listing/petroleum-and-flammable-material-licences"
+  },
+  {
+    "id": "FSSG-008",
+    "jurisdiction": "SG",
+    "hazard_class": "suppression",
+    "title": "Hose reel systems",
+    "text": "Hose reel systems must be provided for first-aid firefighting and located so that every part of the floor can be reached by the hose, with the reels kept unobstructed and maintained in working order at the required running pressure and flow. They must not be removed, isolated or blocked by storage.",
+    "source_ref": "SCDF Fire Code 2023, Clause 6.2 (Rising Mains and Hose Reel Systems) \u2014 https://www.scdf.gov.sg/fire-safety-services-listing/fire-code-2023/table-of-content/chapter-6-firefighting-systems"
+  },
+  {
+    "id": "FSSG-009",
+    "jurisdiction": "SG",
+    "hazard_class": "suppression",
+    "title": "Rising mains and fire hydrants",
+    "text": "Wet or dry rising mains and fire hydrants must be provided according to building height and area to support firefighting operations, with breeching inlets and landing valves kept accessible to the fire service, clearly marked, and maintained in operational condition.",
+    "source_ref": "SCDF Fire Code 2023, Clause 6.2 (Rising Mains and Hose Reel Systems) \u2014 https://www.scdf.gov.sg/fire-safety-services-listing/fire-code-2023/table-of-content/chapter-6-firefighting-systems"
+  },
+  {
+    "id": "FSSG-010",
+    "jurisdiction": "SG",
+    "hazard_class": "structural",
+    "title": "Fire compartmentation and protection of openings",
+    "text": "Buildings must be subdivided into fire compartments by fire-resisting walls and floors to limit fire spread, and openings in fire-rated elements (doors, service penetrations, ducts) must be protected by fire-rated doors, fire stopping or fire dampers so the compartment's rating is preserved.",
+    "source_ref": "SCDF Fire Code 2023, Chapter 3 (Structural Fire Precautions), Clause 3.9 (Protection of Openings) \u2014 https://www.scdf.gov.sg/fire-safety-services-listing/fire-code-2023/table-of-content/chapter-3-structural-fire-precautions/clause-3.9-protection-of-openings"
+  },
+  {
+    "id": "FSSG-011",
+    "jurisdiction": "SG",
+    "hazard_class": "access",
+    "title": "Fire engine access and accessway",
+    "text": "A fire engine accessway and hardstanding must be provided to give fire appliances adequate access to the building for firefighting and rescue, and these accessways must be kept clear of obstruction, parking and stored materials at all times.",
+    "source_ref": "SCDF Fire Code 2023, fire service access provisions \u2014 https://www.scdf.gov.sg/fire-safety-services-listing/fire-code-2023"
+  }
+]

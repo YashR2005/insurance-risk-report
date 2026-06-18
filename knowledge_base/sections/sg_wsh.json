@@ -1,0 +1,66 @@
+[
+  {
+    "id": "WSSG-001",
+    "jurisdiction": "SG",
+    "hazard_class": "machinery",
+    "title": "Guarding of dangerous parts of machinery",
+    "text": "Every dangerous part of machinery must be securely guarded unless it is in a position or of a construction as safe as a secure guard would provide. Guards must be of substantial construction and properly maintained, and machinery must be fitted with accessible emergency stop controls.",
+    "source_ref": "WSH (General Provisions) Regulations, Part on machinery \u2014 https://sso.agc.gov.sg/SL/WSHA2006-RG1"
+  },
+  {
+    "id": "WSSG-002",
+    "jurisdiction": "SG",
+    "hazard_class": "work_at_height",
+    "title": "Prevention of falls / work at height",
+    "text": "Where a person may fall from height, fall-prevention measures must be provided \u2014 guard-rails, barriers, covers or a travel-restraint/fall-arrest system anchored to an adequate point. Open sides, floor openings and edges must be protected, and a permit-to-work system applied to higher-risk work at height.",
+    "source_ref": "WSH (Work at Heights) Regulations 2013; WSH (General Provisions) Regulations \u2014 https://www.mom.gov.sg/workplace-safety-and-health/work-at-heights"
+  },
+  {
+    "id": "WSSG-003",
+    "jurisdiction": "SG",
+    "hazard_class": "hazardous_substances",
+    "title": "Control and storage of hazardous substances",
+    "text": "Hazardous substances must be controlled through labelling to the GHS, accessible Safety Data Sheets, and designated storage that segregates incompatible chemicals from each other and from ignition sources. Exposure must be controlled by ventilation and, where residual risk remains, suitable personal protective equipment that is provided, maintained and used.",
+    "source_ref": "WSH (General Provisions) Regulations, hazardous substances provisions \u2014 https://sso.agc.gov.sg/SL/WSHA2006-RG1"
+  },
+  {
+    "id": "WSSG-004",
+    "jurisdiction": "SG",
+    "hazard_class": "housekeeping",
+    "title": "Safe access and housekeeping",
+    "text": "Floors, passageways and gangways must be kept free of obstruction and of substances likely to cause slips or trips, and a safe means of access to and egress from every workplace must be provided and maintained. Materials must be stacked and stored so as not to be liable to collapse.",
+    "source_ref": "WSH (General Provisions) Regulations, safe access provisions \u2014 https://sso.agc.gov.sg/SL/WSHA2006-RG1"
+  },
+  {
+    "id": "WSSG-005",
+    "jurisdiction": "SG",
+    "hazard_class": "confined_space",
+    "title": "Entry into confined spaces",
+    "text": "No person may enter a confined space unless the atmosphere has been tested and certified safe by a competent person, a confined-space entry permit has been issued, and adequate ventilation, isolation, communication and rescue arrangements are in place for the duration of the work.",
+    "source_ref": "WSH (Confined Spaces) Regulations 2009 \u2014 https://sso.agc.gov.sg"
+  },
+  {
+    "id": "WSSG-006",
+    "jurisdiction": "SG",
+    "hazard_class": "noise",
+    "title": "Control of excessive noise",
+    "text": "Where workers are exposed to excessive noise (above the permissible exposure level of 85 dB(A) over 8 hours), the employer must reduce exposure through engineering controls, provide suitable hearing protection, demarcate noise hazard areas, and provide audiometric examinations for exposed workers.",
+    "source_ref": "WSH (Noise) Regulations \u2014 https://sso.agc.gov.sg"
+  },
+  {
+    "id": "WSSG-007",
+    "jurisdiction": "SG",
+    "hazard_class": "lighting_ventilation",
+    "title": "Lighting and ventilation of workplaces",
+    "text": "Every workplace and means of access must be provided with adequate and suitable lighting, and effective and suitable ventilation must be provided to keep workrooms supplied with fresh air and to render harmless, so far as practicable, fumes, dust and other impurities.",
+    "source_ref": "WSH (General Provisions) Regulations, lighting and ventilation provisions \u2014 https://sso.agc.gov.sg/SL/WSHA2006-RG1"
+  },
+  {
+    "id": "WSSG-008",
+    "jurisdiction": "SG",
+    "hazard_class": "risk_management",
+    "title": "Workplace risk assessment",
+    "text": "The employer must conduct a risk assessment of the safety and health risks posed to any person by the work carried out, implement reasonably practicable control measures following the hierarchy of control, record the assessment, and review it regularly or after any incident.",
+    "source_ref": "WSH (Risk Management) Regulations 2006 \u2014 https://sso.agc.gov.sg"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "FLSG-001",
+    "jurisdiction": "SG",
+    "hazard_class": "flood",
+    "title": "Minimum platform level for buildings",
+    "text": "New developments must be built to a minimum platform level \u2014 raised to 4 metres Singapore Height Datum (SHD) in flood-prone catchments \u2014 so that the finished floor sits above the design flood level and the building is protected from surface-water flooding.",
+    "source_ref": "PUB Code of Practice on Surface Water Drainage (minimum platform level) \u2014 https://www.pub.gov.sg/Public/KeyInitiatives/Flood-Resilience/Stormwater-Management"
+  },
+  {
+    "id": "FLSG-002",
+    "jurisdiction": "SG",
+    "hazard_class": "flood",
+    "title": "Basement crest levels and flood barriers",
+    "text": "Entrances, exits and openings to basements and underground structures must be provided with a crest level set above the minimum platform level (raised to 300 mm above platform level), and flood-protection measures such as flood barriers must be installed and maintained to prevent ingress of floodwater.",
+    "source_ref": "PUB Code of Practice on Surface Water Drainage (crest level / flood protection) \u2014 https://www.pub.gov.sg/Public/KeyInitiatives/Flood-Resilience/Stormwater-Management"
+  },
+  {
+    "id": "FLSG-003",
+    "jurisdiction": "SG",
+    "hazard_class": "flood",
+    "title": "On-site detention and drainage maintenance",
+    "text": "Developments must manage stormwater at source, including on-site detention tanks to attenuate peak run-off, and internal drains, gratings and discharge points must be kept clear and maintained so that drainage capacity is not reduced by silt or debris.",
+    "source_ref": "PUB Code of Practice on Surface Water Drainage (source solutions / drainage) \u2014 https://www.pub.gov.sg/Public/KeyInitiatives/Flood-Resilience/Stormwater-Management"
+  },
+  {
+    "id": "FLSG-004",
+    "jurisdiction": "SG",
+    "hazard_class": "flood",
+    "title": "Protection of critical M&E equipment",
+    "text": "Critical mechanical and electrical equipment \u2014 such as main switch rooms, generators, pumps and lift motor rooms \u2014 must be located above the minimum platform / flood level or otherwise protected from flooding, so that essential services are not disabled during a flood event.",
+    "source_ref": "PUB Code of Practice on Surface Water Drainage, Clause 2.5 (Critical M&E Equipment) \u2014 https://www.pub.gov.sg/Public/KeyInitiatives/Flood-Resilience/Stormwater-Management"
+  },
+  {
+    "id": "FLSG-005",
+    "jurisdiction": "SG",
+    "hazard_class": "flood",
+    "title": "ABC Waters design features",
+    "text": "Developments should integrate ABC (Active, Beautiful, Clean) Waters design features such as bioretention basins, rain gardens and detention storage to slow and treat stormwater at source, reducing peak run-off into the public drainage system and improving water quality.",
+    "source_ref": "PUB Code of Practice on Surface Water Drainage, ABC Waters Design Features \u2014 https://www.pub.gov.sg/Public/KeyInitiatives/Flood-Resilience/Stormwater-Management"
+  },
+  {
+    "id": "FLSG-006",
+    "jurisdiction": "SG",
+    "hazard_class": "flood",
+    "title": "Drainage reserves and outfall structures",
+    "text": "Drainage reserves must be kept clear of unauthorised structures and obstruction to allow maintenance access, and outfall structures discharging to public drains or the sea must be properly designed and maintained so that flow is not impeded and bank or channel erosion is prevented.",
+    "source_ref": "PUB Code of Practice on Surface Water Drainage (drainage reserve / outfall structures) \u2014 https://www.pub.gov.sg/Public/KeyInitiatives/Flood-Resilience/Stormwater-Management"
+  }
+]

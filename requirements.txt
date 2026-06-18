@@ -1,0 +1,35 @@
+# The pipeline core runs on the Python standard library alone (mock mode).
+# Each block below enables one real component; install only what you turn on.
+
+# --- config: load secrets/switches from a .env file ---
+python-dotenv>=1.0
+
+# --- document export (PDF / DOCX) ---
+reportlab>=4.0         # PDF export (pure-python, no system libs)
+python-docx>=1.1       # editable DOCX export
+
+# --- tests (dev) ---
+pytest>=8.0
+
+# --- UI (capture -> edit -> export) ---
+streamlit>=1.33
+
+# --- real LLM generation + verification (pick the provider you use) ---
+anthropic>=0.39        # LLM_PROVIDER=anthropic  (needs ANTHROPIC_API_KEY)
+openai>=1.40           # LLM_PROVIDER=openai     (needs OPENAI_API_KEY)
+
+# --- real retrieval (embeddings + vector store) ---
+sentence-transformers>=2.7   # RETRIEVAL_MODE=embeddings
+chromadb>=0.5
+
+# --- knowledge base ingestion (only needed for PDF sources) ---
+pdfplumber             # knowledge_base/ingest.py PDF parsing (Markdown sources need nothing)
+
+# --- multimodal capture ---
+openai-whisper         # voice -> text (also needs the ffmpeg binary)
+pytesseract            # photo -> text via OCR (also needs the tesseract binary)
+pillow
+
+# --- API backend (optional, if you front the pipeline with REST) ---
+# fastapi
+# uvicorn

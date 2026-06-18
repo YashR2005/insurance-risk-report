@@ -1,0 +1,17 @@
+{
+  "site_name": "Tuas Logistics Warehouse B",
+  "inspection_date": "2026-06-10",
+  "inspector": "A. Tan",
+  "jurisdiction": "SG",
+  "findings": [
+    { "text": "Main exit on the east side is partially blocked by stacked pallets reducing the clear exit width.", "area": "egress" },
+    { "text": "Only one portable fire extinguisher visible across the 800 square metre floor, located near the office.", "area": "suppression" },
+    { "text": "Cardboard packaging stored directly against the electrical distribution board.", "area": "storage" },
+    { "text": "Emergency exit signage is present and illuminated along the escape route.", "area": "emergency_systems" },
+    { "text": "Socket outlets on the packing line are not protected by a 30 mA residual current device.", "area": "electrical" },
+    { "text": "Rotating drive shaft on the conveyor is exposed with no guard fitted.", "area": "machinery" },
+    { "text": "Workers retrieve stock from a mezzanine edge that has no guard-rail or fall protection.", "area": "work_at_height" },
+    { "text": "The forklift's lifting examination certificate on display expired fourteen months ago.", "area": "lifting" },
+    { "text": "Basement loading bay entrance has no flood barrier and sits below the surrounding ground level.", "area": "flood" }
+  ]
+}

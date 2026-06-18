@@ -32,6 +32,21 @@ output is traceable to a real, cited clause.
 
 ---
 
+## 🎯 What makes this different
+
+- **Citations are not optional.** Unlike "summarise this into a report," every compliance
+  claim is bound to a specific clause ID before the model runs — and resolved to its source
+  in a References appendix.
+- **A verification gate, not blind trust.** The tool tells you what it *couldn't* support and
+  asks a human to review it — the opposite of a confident hallucination.
+- **Runs offline and deterministic.** Mock mode produces the same clean report every time, so
+  demos never depend on a flaky API — then the same pipeline upgrades to a real LLM with one
+  env var.
+- **Honest about its sources.** Standards are clearly marked as paraphrases with a `source_ref`
+  to the real clause, because for an insurance document traceability *is* the product.
+
+---
+
 ## ✨ Features
 
 - **Multimodal capture** — typed notes, **voice notes** (Whisper transcription), and
@@ -77,7 +92,25 @@ The retrieval and LLM stages are pluggable: `mock` (offline) ↔ OpenAI/Anthropi
 
 ---
 
-## 1. Setup
+## ✅ Status — what works today
+
+| Component | Status |
+|---|---|
+| Capture — typed notes | ✅ |
+| Capture — voice (Whisper) / photo (OCR) | ✅ (needs `ffmpeg` / `tesseract`) |
+| Retrieval — keyword + embeddings (Chroma) | ✅ (embeddings default, auto-fallback) |
+| Drafting — mock + OpenAI/Anthropic | ✅ (live LLM needs an API key) |
+| Verification gate + human-review flags | ✅ |
+| Citations + References appendix | ✅ |
+| UI — capture → edit → export | ✅ (Streamlit) |
+| Export — md / json / pdf / docx | ✅ |
+| Knowledge base + ingestion | ✅ (~39 cited SG sections) |
+| Evaluation harness + tests | ✅ |
+| Docker | ✅ |
+
+---
+
+## 🚀 Setup
 
 Python 3.10+. Use a virtual environment (recommended):
 
@@ -99,11 +132,11 @@ pip install -r requirements.txt
 
 > The core pipeline depends only on the Python standard library; the packages above
 > enable the UI and the optional real components. Voice/photo also need system binaries
-> (`ffmpeg`, `tesseract`) — see §4.
+> (`ffmpeg`, `tesseract`) — see **Configuration**.
 
 ---
 
-## 2. Use the UI (recommended)
+## 🖥️ Use the UI (recommended)
 
 ```bash
 streamlit run app.py
@@ -125,7 +158,7 @@ Mock mode is the default and fully offline — good for a reliable demo.
 
 ---
 
-## 3. Use the CLI
+## ⌨️ Use the CLI
 
 ```bash
 python run.py                      # draft the sample observation → output/report.{md,json}
@@ -152,7 +185,21 @@ See `samples/observation_warehouse.json` for a multi-peril example.
 
 ---
 
-## 4. ⚙️ Configuration
+## 🐳 Docker (runnable / hosted)
+
+```bash
+docker build -t riskdraft .
+docker run -p 8501:8501 riskdraft                          # mock mode → http://localhost:8501
+docker run -p 8501:8501 -e LLM_PROVIDER=openai \
+    -e OPENAI_API_KEY=sk-... riskdraft                      # with a real LLM
+```
+
+The image bundles `ffmpeg` and `tesseract`, so voice/photo capture works out of the box.
+Secrets are passed at run time with `-e`, never baked into the image.
+
+---
+
+## ⚙️ Configuration
 
 All configuration is read from the environment (`pipeline/config.py`). The easiest way is a
 **`.env`** file in the project root — loaded automatically, and gitignored:
@@ -179,7 +226,7 @@ typed notes still work.
 
 ---
 
-## 5. Knowledge base — and how to extend it
+## 📚 Knowledge base — and how to extend it
 
 A **multi-peril Singapore corpus** (~39 sections), paraphrased from real cited standards,
 each with a `source_ref` (clause + URL):
@@ -209,7 +256,7 @@ The raw Markdown format and the PDF-ingestion path are documented in `knowledge_
 
 ---
 
-## 6. 📊 Evaluation & tests
+## 📊 Evaluation & tests
 
 ```bash
 python -m pytest -q        # smoke tests: pipeline contract, retrieval, dedup, render, export
@@ -226,50 +273,7 @@ On the current gold set (`eval/dataset.json`, ~29 cases across all perils):
 
 ---
 
-## 7. ✅ Status — what works today
-
-| Component | Status |
-|---|---|
-| Capture — typed notes | ✅ |
-| Capture — voice (Whisper) / photo (OCR) | ✅ (needs `ffmpeg` / `tesseract`) |
-| Retrieval — keyword + embeddings (Chroma) | ✅ (embeddings default, auto-fallback) |
-| Drafting — mock + OpenAI/Anthropic | ✅ (live LLM needs an API key) |
-| Verification gate + human-review flags | ✅ |
-| Citations + References appendix | ✅ |
-| UI — capture → edit → export | ✅ (Streamlit) |
-| Export — md / json / pdf / docx | ✅ |
-| Knowledge base + ingestion | ✅ (~39 cited SG sections) |
-| Evaluation harness + tests | ✅ |
-| Docker | ✅ |
-
----
-
-## 8. 🎯 What makes this different
-
-- **Citations are not optional.** Unlike "summarise this into a report," every compliance
-  claim is bound to a specific clause ID before the model runs — and resolved to its source
-  in a References appendix.
-- **A verification gate, not blind trust.** The tool tells you what it *couldn't* support and
-  asks a human to review it — the opposite of a confident hallucination.
-- **Runs offline and deterministic.** Mock mode produces the same clean report every time, so
-  demos never depend on a flaky API — then the same pipeline upgrades to a real LLM with one
-  env var.
-- **Honest about its sources.** Standards are clearly marked as paraphrases with a `source_ref`
-  to the real clause, because for an insurance document traceability *is* the product.
-
----
-
-## 9. 🗺️ Roadmap
-
-1. Verify each KB section against the **live published clause** and prefer verbatim wording.
-2. Deeper editing: edit/fix a claim's **citation** in the UI and a **reviewer sign-off** (accept/override).
-3. Real-LLM **entailment evaluation** with human-graded labels (beyond the lexical mock check).
-4. Broaden the corpus (more perils, more jurisdictions) and tune embedding thresholds.
-5. Record the 5–10 min demo (`demo/demo_script.md`).
-
----
-
-## Project layout
+## 🗂️ Project layout
 
 ```
 app.py                      Streamlit UI (capture → draft → edit → export)
@@ -291,7 +295,9 @@ tests/                      pytest smoke tests
 docs/architecture.md        design notes   ·   demo/demo_script.md   demo outline
 ```
 
-## How it maps to the brief
+---
+
+## 🧭 How it maps to the brief
 
 | Deliverable | Where |
 |---|---|
@@ -299,3 +305,18 @@ docs/architecture.md        design notes   ·   demo/demo_script.md   demo outli
 | Knowledge base sample + ingestion method | `knowledge_base/` + `INGESTION.md` |
 | Demo (input → draft → edit → export) | the UI + `demo/demo_script.md` |
 | Test evidence (dataset, cases, metrics) | `eval/`, `tests/` |
+
+---
+
+## 🗺️ Roadmap
+
+1. Verify each KB section against the **live published clause** and prefer verbatim wording.
+2. Deeper editing: edit/fix a claim's **citation** in the UI and a **reviewer sign-off** (accept/override).
+3. Real-LLM **entailment evaluation** with human-graded labels (beyond the lexical mock check).
+4. Broaden the corpus (more perils, more jurisdictions) and tune embedding thresholds.
+5. Record the 5–10 min demo (`demo/demo_script.md`).
+
+---
+
+_Proof of concept developed for the NTU veNTUre programme. Built to assist insurance risk
+assessment, not replace professional judgement._
